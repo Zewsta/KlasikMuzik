@@ -1,16 +1,17 @@
-import asyncio
 import importlib
 import sys
+import asyncio
 
 from pyrogram import idle
 from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
-from WinxMusic import HELPABLE, LOGGER, app, userbot
+from config import BANNED_USERS
+from WinxMusic import LOGGER, app, userbot
 from WinxMusic.core.call import Winx
+from WinxMusic.misc import sudo
 from WinxMusic.plugins import ALL_MODULES
 from WinxMusic.utils.database import get_banned_users, get_gbanned
-from config import BANNED_USERS
 
 
 async def init():
@@ -40,30 +41,25 @@ async def init():
         pass
     await app.start()
     for all_module in ALL_MODULES:
-        imported_module = importlib.import_module(all_module)
-
-        if hasattr(imported_module, "__MODULE__") and imported_module.__MODULE__:
-            if hasattr(imported_module, "__HELP__") and imported_module.__HELP__:
-                HELPABLE[imported_module.__MODULE__.lower()] = imported_module
-    LOGGER("WinxMusic.plugins").info("Successfully Imported All Modules ")
+        importlib.import_module("WinxMusic.plugins" + all_module)
+    LOGGER("WinxMusic.plugins").info("Necessary Modules Imported Successfully.")
     await userbot.start()
     await Winx.start()
-    LOGGER("WinxMusic").info("Assistant Started Sucessfully")
     try:
-        await Winx.stream_call(
-            "http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4"
-        )
+        await Winx.stream_call("https://telegra.ph/file/b60b80ccb06f7a48f68b5.mp4")
     except NoActiveGroupCall:
         LOGGER("WinxMusic").error(
-            "Please ensure the voice call in your log group is active."
+            "[ERROR] - \n\nTurn on group voice chat and don't put it off otherwise I'll stop working thanks."
         )
         sys.exit()
-
+    except:
+        pass
     await Winx.decorators()
-    LOGGER("WinxMusic").info("WinxMusic Started Successfully")
+    LOGGER("WinxMusic").info("Alexa Music Bot Started Successfully")
     await idle()
     await app.stop()
     await userbot.stop()
+    LOGGER("WinxMusic").info("Stopping Alexa Music Bot...")
 
 
 if __name__ == "__main__":
