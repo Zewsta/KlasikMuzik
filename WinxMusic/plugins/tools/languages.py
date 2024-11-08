@@ -4,7 +4,7 @@ from pyrogram.types import InlineKeyboardButton, Message
 
 from WinxMusic import app
 from WinxMusic.utils.database import get_lang, set_lang
-from WinxMusic.utils.decorators import actual_admin_cb, language, languageCB
+from WinxMusic.utils.decorators import actual_admin_cb, language, language_cb
 from config import BANNED_USERS
 from strings import get_command, get_string, languages_present
 
