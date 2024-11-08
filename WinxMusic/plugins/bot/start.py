@@ -7,7 +7,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from youtubesearchpython.__future__ import VideosSearch
 
 import config
-from WinxMusic import HELPABLE, Telegram, YouTube, app
+from WinxMusic import Telegram, YouTube, app
 from WinxMusic.misc import SUDOERS, _boot_
 from WinxMusic.plugins.play.playlist import del_plist_msg
 from WinxMusic.plugins.sudo.sudoers import sudoers_list
@@ -28,33 +28,24 @@ from WinxMusic.utils.inline import private_panel, start_pannel
 from config import BANNED_USERS, START_IMG_URL
 from config.config import OWNER_ID
 from strings import command, get_command, get_string
-from .help import paginate_modules
 
 loop = asyncio.get_running_loop()
 
-START_COMMAND = get_command("START_COMMAND")
-
-
-@app.on_message(filters.command(START_COMMAND) & filters.private & ~BANNED_USERS)
+@app.on_message(
+    filters.command(get_command("START_COMMAND"))
+    & filters.private
+    & ~BANNED_USERS
+)
 @language_start
-async def start_comm(client: Client, message: Message, _):
-    chat_id = message.chat.id
+async def start_comm(client, message: Message, _):
     await add_served_user(message.from_user.id)
     if len(message.text.split()) > 1:
         name = message.text.split(None, 1)[1]
         if name[0:4] == "help":
-            keyboard = InlineKeyboardMarkup(paginate_modules(0, HELPABLE, close=True))
-            if config.START_IMG_URL:
-                return await message.reply_photo(
-                    photo=START_IMG_URL,
-                    caption=_["help_1"],
-                    reply_markup=keyboard,
-                )
-            else:
-                return await message.reply_text(
-                    text=_["help_1"],
-                    reply_markup=keyboard,
-                )
+            keyboard = help_pannel(_)
+            return await message.reply_text(
+                _["help_1"], reply_markup=keyboard
+            )
         if name[0:4] == "song":
             await message.reply_text(_["song_2"])
             return
@@ -289,27 +280,3 @@ async def welcome(_client: Client, message: Message):
         except:
 
             return
-
-
-__MODULE__ = "Bot"
-__HELP__ = f"""
-<b>✦ c significa reprodução em canal.</b>
-
-<b>★ {command("STATS_COMMAND")}</b> - Obtenha as Estatísticas Globais das 10 faixas mais tocadas, 10 principais usuários do bot, 10 principais chats no bot, 10 mais tocadas em um chat, etc.
-
-<b>★ {command("SUDOUSERS_COMMAND")}</b> - Verifique os usuários Sudo do bot.
-
-<b>★ {command("LYRICS_COMMAND")} [Nome da Música]</b> - Pesquise letras para uma música específica na web.
-
-<b>★ {command("SONG_COMMAND")} [Nome da Faixa] ou [Link do YT]</b> - Baixe qualquer faixa do YouTube nos formatos MP3 ou MP4.
-
-<b>★ {command("QUEUE_COMMAND")}</b> - Verifique a lista de músicas na fila.
-
-    <u><b>⚡️Bot Privado:</b></u>
-
-<b>✧ {command("AUTHORIZE_COMMAND")} [ID_DO_CHAT]</b> - Permitir que um chat use o seu bot.
-
-<b>✧ {command("UNAUTHORIZE_COMMAND")} [ID_DO_CHAT]</b> - Bloquear um chat de usar o seu bot.
-
-<b>✧ {command("AUTHORIZED_COMMAND")}</b> - Verificar todos os chats permitidos do seu bot.
-"""
