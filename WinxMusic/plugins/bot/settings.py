@@ -58,7 +58,7 @@ async def settings_mar(_client: Client, message: Message, _):
 
 
 @app.on_callback_query(filters.regex("settings_helper") & ~BANNED_USERS)
-@languageCB
+@language_cb
 async def settings_cb(_client: Client, callback_query: CallbackQuery, _):
     try:
         await callback_query.answer(_["set_cb_8"])
@@ -75,7 +75,7 @@ async def settings_cb(_client: Client, callback_query: CallbackQuery, _):
 
 
 @app.on_callback_query(filters.regex("settingsback_helper") & ~BANNED_USERS)
-@languageCB
+@language_cb
 async def settings_back_markup(_client: Client, callback_query: CallbackQuery, _):
     try:
         await callback_query.answer()
@@ -144,7 +144,7 @@ async def gen_buttons_vid(_, aud: str):
     )
     & ~BANNED_USERS
 )
-@languageCB
+@language_cb
 async def without_Admin_rights(_client: Client, callback_query: CallbackQuery, _):
     command = callback_query.matches[0].group(1)
     if command == "SEARCHANSWER":
