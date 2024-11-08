@@ -128,6 +128,8 @@ TG_VIDEO_FILESIZE_LIMIT = int(
 # Refer to https://i.postimg.cc/Bbg3LQTG/image.png
 SET_CMDS = getenv("SET_CMDS", "False")
 
+SEND_WELCOME_PHOTO = False
+
 # You'll need a Pyrogram String Session for these vars. Generate String from our session generator bot @WinxStringBot
 STRING_SESSIONS = list(map(str.strip, getenv("STRING_SESSIONS", None).split(",")))
 
