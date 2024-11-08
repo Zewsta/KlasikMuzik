@@ -1,153 +1,126 @@
-HELP_1 = """<b>❖ ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅs ➥</b>
+HELP_1 = """✅**<u>BURDAKİ KOMUTLARI YALNIZCA GRUP ADMİNLERİ KULLANABİLİR:</u>**
 
-● /pause ➥ ᴩᴀᴜsᴇ ᴛʜᴇ ᴄᴜʀʀᴇɴᴛ ᴩʟᴀʏɪɴɢ sᴛʀᴇᴀᴍ.
-● /resume ➥ ʀᴇsᴜᴍᴇ ᴛʜᴇ ᴩᴀᴜsᴇᴅ sᴛʀᴇᴀᴍ.
-● /skip ➥ sᴋɪᴩ ᴛʜᴇ ᴄᴜʀʀᴇɴᴛ ᴩʟᴀʏɪɴɢ sᴛʀᴇᴀᴍ ᴀɴᴅ sᴛᴀʀᴛ sᴛʀᴇᴀᴍɪɴɢ ᴛʜᴇ ɴᴇxᴛ ᴛʀᴀᴄᴋ ɪɴ ǫᴜᴇᴜᴇ.
-● /end ᴏʀ /stop ➥ ᴄʟᴇᴀʀs ᴛʜᴇ ǫᴜᴇᴜᴇ ᴀɴᴅ ᴇɴᴅ ᴛʜᴇ ᴄᴜʀʀᴇɴᴛ ᴩʟᴀʏɪɴɢ sᴛʀᴇᴀᴍ.
-● /player ➥ ɢᴇᴛ ᴀ ɪɴᴛᴇʀᴀᴄᴛɪᴠᴇ ᴩʟᴀʏᴇʀ ᴩᴀɴᴇʟ.
-● /queue ➥ sʜᴏᴡs ᴛʜᴇ ǫᴜᴇᴜᴇᴅ ᴛʀᴀᴄᴋs ʟɪsᴛ.
+**Burdaki Komutları Normal Üyelerinde Kullanabilmesi İçin İstediğiniz Kişinin Mesajını Yanıtlayarak /yetkilendir Yazmanız Yeterlidir.**
 
-❖ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➥ ˹ Kʀɪsʜ ꭙ ᴍᴜsɪᴄ™ ♡゙
+**/duraklat :** Müziği Duraklatır.
+**/devam :** Müziği Devam Ettirir.
+**/atla :** Çalan Müziği Atlar.
+**/stop veya /son :** Müziği Tamamen Durdurur.
+**/karistir :** Sıraya Aldığınız Parçaları Karışık Şekilde Oynatır.
+**/ilerisar :** Müziği İleri Sarar. (Örnek: /ilerisar 15 İle Çalan Müziği 15 Saniye İleri Alabilirsiniz.)
+**/gerisar :** Müziği Geri Sarar. (Örnek: /seekback 15 İle Çalan Müziği 15 Saniye Geri Alabilirsiniz.)
+**/restart :** Botu Yeniden Başlatır.
+
+✅<u>**Döngü Modu:**</u>
+**/dongu :** Çalan Müziği Döngüye Alıp Tekrar Oynatır. 
+(Örnek: /dongu 3 İle Seste Çalan Müziği 3 Kere Daha Oynatır.)"""
+
+
+HELP_2 = """✅<u>**OYNATMA KOMUTLARI:**</u>
+
+**/oynat veya /play :** Müziği Oynatmaya Yarar.
+**-Örnek Kullanım:** /oynat şarkı İsmi // Veya Oynatmak İstediğiniz Şarkıyı Yanıtlayarak /oynat Yazabilirsiniz.
+(**Örnek:** /oynat Uzi Paparazzi)
+
+**/voynat veya /vplay :** Videoyu Seste Oynatmaya Yarar.
+**-Örnek Kullanım:** /voynat Video İsmi // Veya Oynatmak İstediğiniz Videoyu Yanıtlayarak /vplay veya /voynat Yazabilirsiniz.
+
+**/bul [Müzik Adı] veya [Youtube Linki] :** Youtubedan İndirmek İstediğiniz Şarkıyı İndirebilirsiniz.
+(**Örnek:** /bul Uzi Paparazzi)
+
+
+✅**<u>Oynatma Listeleri:</u>**
+**/playlist :** Oynatma Listenizde Hangi Müziklerin Olduğuna Bakabilirsiniz.
+**/listemisil :** Oynatma Listenizden Silmek İstediğiniz Müziği Seçebilirsiniz.
+**/oynat Komutunu Tek Başına Kullanırsanız:** Oynatma Listeleri Ekranına Ulaşırsınız. """
+
+
+HELP_3 = """✅<u>**BOT KOMUTLARI**</u>
+
+**/stat :** Bottaki Tüm İstatistikleri Görebilirsiniz. En Çok Müzik Oynatan Gruplar, Kullanıcılar, En Çok Oynatılan Müzikler Ve Daha Fazlası...
+
+**/sudolist :** Yardım İstemek İçin Bottaki Sudo Kullanıcılarına Ulaşabilirsiniz.
+
+**/sarkisozu [Müzik Adı] :** Sözlerine Bakmak İstediğiniz Şarkıyı Arayabilirsiniz.
+
+**/bul [Müzik Adı] veya [Youtube Linki] :** Youtubedan İndirmek İstediğiniz Şarkıyı İndirebilirsiniz.
+
+**/video [Müzik Adı] veya [Youtube Linki] :** Youtubedan İndirmek İstediğiniz Videoyu İndirebilirsiniz.
+(**Örnek:** /videoindir Neşet Ertaş Gönül Dağı)
+
+**/sira :** Sırada Olan Müzikler Listesini Görebilirsiniz."""
+
+HELP_4 = """✅<u>**EKSTRA KOMUTLAR:**</u>
+
+**/start :** Botun Başlatma Panelini Gösterir. 
+
+**/ayarlar :** Ayarlar Menüsüne Ulaşabilirsiniz.
+
+**/yardim :** Botun Yardım Menüsüne Ulaşırsınız.
+
+**/ping :** Ping Süresini CPU Ve RAM Kullanımına Bakabilirsiniz.
+
+**/hava :** İstediğiniz Şehrin Veya Ülkenin Hava Durumuna Bakabilirsiniz.
+
+**/cevir :** Yabancı Kelimeleri Türkçeye Çevirmenize Yarar.
+
+**/id :** Yanıtladığınız Kullanıcının Veya Grubun ID'sini Alabilirsiniz.
 """
 
-HELP_2 = """
-<b>❖ ᴀᴜᴛʜ ᴜsᴇʀs ➥</b>
 
-● /auth [ᴜsᴇʀɴᴀᴍᴇ/ᴜsᴇʀ_ɪᴅ] ➥ ᴀᴅᴅ ᴀ ᴜsᴇʀ ᴛᴏ ᴀᴜᴛʜ ʟɪsᴛ ᴏғ ᴛʜᴇ ʙᴏᴛ.
-● /unauth [ᴜsᴇʀɴᴀᴍᴇ/ᴜsᴇʀ_ɪᴅ] ➥ ʀᴇᴍᴏᴠᴇ ᴀ ᴀᴜᴛʜ ᴜsᴇʀs ғʀᴏᴍ ᴛʜᴇ ᴀᴜᴛʜ ᴜsᴇʀs ʟɪsᴛ.
-● /authusers ➥ sʜᴏᴡs ᴛʜᴇ ʟɪsᴛ ᴏғ ᴀᴜᴛʜ ᴜsᴇʀs ᴏғ ᴛʜᴇ ɢʀᴏᴜᴩ.
+HELP_5 = """🔰**<u>BURASI ÇOK ÖNEMLİ DEĞİL, SADECE BOT YÖNETİCİLERİ İÇİN BİR REHBER:</u>**
 
-❖ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➥ ˹ Kʀɪsʜ ꭙ ᴍᴜsɪᴄ™ ♡゙
-"""
+/addsudo [Kullanıcı adı veya kullanıcıya yanıt]
+/delsudo [Kullanıcı adı veya kullanıcıya yanıt]
 
-HELP_3 = """
-<b>❖ ʙʀᴏᴀᴅᴄᴀsᴛ ғᴇᴀᴛᴜʀᴇ</b> [ᴏɴʟʏ ғᴏʀ sᴜᴅᴏᴇʀs] ➥
+🤖**<u>BOT Komutları:</u>**
+/reboot - Botunuzu yeniden başlatın. 
+/update - Botu Güncelle.
+/speedtest - Sunucu hızlarını kontrol edin
+/maintenance [enable / disable] 
+/logger [enable / disable] - Bot, aranan sorguları günlükçü grubuna kaydeder.
+/get_log [Satır Sayısı] - Botunuzun günlüğünü heroku veya vps'den alın. Her ikisi için de işe yarar.
+/autoend [enable|disable] - Kimse dinlemiyorsa 3 dakika sonra Otomatik akışı sonlandır özelliğini etkinleştirin.
 
-● /broadcast [ᴍᴇssᴀɢᴇ ᴏʀ ʀᴇᴩʟʏ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ] ➥ ʙʀᴏᴀᴅᴄᴀsᴛ ᴀ ᴍᴇssᴀɢᴇ ᴛᴏ sᴇʀᴠᴇᴅ ᴄʜᴀᴛs ᴏғ ᴛʜᴇ ʙᴏᴛ.
+📈**<u>İSTATİSTİK KOMUTLARI:</u>**
+/aktifses - Bottaki aktif sesli sohbetleri kontrol edin.
+/aktifvideo - Bottaki etkin video görüşmelerini kontrol edin.
+/stat - Bot İstatistiklerini Kontrol Edin
 
-● <b>-pin</b> ➥ ᴩɪɴs ʏᴏᴜʀ ʙʀᴏᴀᴅᴄᴀsᴛᴇᴅ ᴍᴇssᴀɢᴇs ɪɴ sᴇʀᴠᴇᴅ ᴄʜᴀᴛs.
-● <b>-pinloud</b> ➥ ᴩɪɴs ʏᴏᴜʀ ʙʀᴏᴀᴅᴄᴀsᴛᴇᴅ ᴍᴇssᴀɢᴇ ɪɴ sᴇʀᴠᴇᴅ ᴄʜᴀᴛs ᴀɴᴅ sᴇɴᴅ ɴᴏᴛɪғɪᴄᴀᴛɪᴏɴ ᴛᴏ ᴛʜᴇ ᴍᴇᴍʙᴇʀs.
-● <b>-user</b> ➥ ʙʀᴏᴀᴅᴄᴀsᴛs ᴛʜᴇ ᴍᴇssᴀɢᴇ ᴛᴏ ᴛʜᴇ ᴜsᴇʀs ᴡʜᴏ ʜᴀᴠᴇ sᴛᴀʀᴛᴇᴅ ʏᴏᴜʀ ʙᴏᴛ.
-● <b>-assistant</b> ➥ ʙʀᴏᴀᴅᴄᴀsᴛ ʏᴏᴜʀ ᴍᴇssᴀɢᴇ ғʀᴏᴍ ᴛʜᴇ ᴀssɪᴛᴀɴᴛ ᴀᴄᴄᴏᴜɴᴛ ᴏғ ᴛʜᴇ ʙᴏᴛ.
-● <b>-nobot</b> ➥ ғᴏʀᴄᴇs ᴛʜᴇ ʙᴏᴛ ᴛᴏ ɴᴏᴛ ʙʀᴏᴀᴅᴄᴀsᴛ ᴛʜᴇ ᴍᴇssᴀɢᴇ..
+⚠️**<u>KARA LİSTE SOHBET İŞLEVİ:</u>**
+/blacklistchat veya /engelle [CHAT_ID] - Muzik Bot'u kullanarak yapılan tüm sohbetleri kara listeye alın
+/whitelistchat [CHAT_ID] - Kara listeye alınmış herhangi bir sohbeti Muzik Bot kullanarak beyaz listeye alın
+/blacklistedchat veya /engelliler- Kara listeye alınan tüm sohbetleri kontrol edin.
 
-● <b>ᴇxᴀᴍᴩʟᴇ ➥</b> <code>/broadcast -user -assistant -pin ᴛᴇsᴛɪɴɢ ʙʀᴏᴀᴅᴄᴀsᴛ</code>
+👤**<u>ENGELLEME FONKSİYONU:</u>**
+/block [Kullanıcı adı veya kullanıcıya yanıt] - Kullanıcının bot komutlarını kullanmasını engeller.
+/unblock [Kullanıcı adı veya kullanıcıya yanıt] - Bir kullanıcıyı Bot'un Engellenen Listesinden kaldırma.
+/blockedusers - Engellenen Kullanıcı Listelerini kontrol edin
 
-❖ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➥ ˹ Kʀɪsʜ ꭙ ᴍᴜsɪᴄ™ ♡゙
-"""
+👤**<u>GBAN FONKSİYONU:</u>**
+/gban [Kullanıcı adı veya kullanıcıya yanıt] - Bir kullanıcıyı bot sunucusu sohbetinden yasaklayın ve botunuzu kullanmasını engelleyin.
+/ungban [Kullanıcı adı veya kullanıcıya yanıt] - Bir kullanıcıyı Bot'un yasaklı listesinden kaldırın ve onun botunuzu kullanmasına izin verin
+/gbannedusers - G Yasaklı Kullanıcı Listelerini Kontrol Edin
 
-HELP_4 = """<b>❖ ᴄʜᴀᴛ ʙʟᴀᴄᴋʟɪsᴛ ғᴇᴀᴛᴜʀᴇ</b> [ᴏɴʟʏ ғᴏʀ sᴜᴅᴏᴇʀs] ➥
+🎥**<u>VİDEO FONKSİYONU:</u>**
+/videolimit [Sohbet Sayısı] - Aynı anda Video Görüşmeleri için izin verilen maksimum Sohbet Sayısını ayarlayın. Varsayılan olarak 3 sohbet.
+/videomode [download|m3u8] - İndirme modu etkinleştirilirse Bot, videoları M3u8 biçiminde oynatmak yerine indirecektir. Varsayılan olarak M3u8'e. M3u8 modunda herhangi bir sorgu oynatılmadığında indirme modunu kullanabilirsiniz.İndirme modu etkinleştirilirse Bot, videoları M3u8 biçiminde oynatmak yerine indirecektir. Varsayılan olarak M3u8'e. M3u8 modunda herhangi bir sorgu oynatılmadığında indirme modunu kullanabilirsiniz.
 
-● /blacklistchat [ᴄʜᴀᴛ ɪᴅ] ➥ ʙʟᴀᴄᴋʟɪsᴛ ᴀ ᴄʜᴀᴛ ғʀᴏᴍ ᴜsɪɴɢ ᴛʜᴇ ʙᴏᴛ.
-● /whitelistchat [ᴄʜᴀᴛ ɪᴅ] ➥ ᴡʜɪᴛᴇʟɪsᴛ ᴛʜᴇ ʙʟᴀᴄᴋʟɪsᴛᴇᴅ ᴄʜᴀᴛ.
-● /blacklistedchat ➥ sʜᴏᴡs ᴛʜᴇ ʟɪsᴛ ᴏғ ʙʟᴀᴄᴋʟɪsᴛᴇᴅ ᴄʜᴀᴛs.
+⚡️**<u>ÖZEL BOT İŞLEVİ:</u>**
+/pro [CHAT_ID] - Botunuzu kullanmak için sohbete izin verin.
+/unpro [CHAT_ID] - Bir sohbetin botunuzu kullanmasına izin vermeyin.
+/prolar - Botunuzun izin verilen tüm sohbetlerini kontrol edin.
 
-❖ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➥ ˹ Kʀɪsʜ ꭙ ᴍᴜsɪᴄ™ ♡゙
-"""
+🌐**<u>YAYIN FONKSİYONU:</u>**
+/broadcast [Mesaj Gönderme veya Mesaja Cevap Verme] - Herhangi bir mesajı Bot'un Sunulan Sohbetlerine yayınlayın.
 
-HELP_5 = """
-<b>❖ ʙʟᴏᴄᴋ ᴜsᴇʀs</b> [ᴏɴʟʏ ғᴏʀ sᴜᴅᴏᴇʀs] ➥
+<u>Yayın seçenekleri:</u>
+**-pin** : Bu, mesajınızı sabitleyecektir 
+**-pinloud** : Bu, mesajınızı yüksek sesli bildirimle sabitleyecektir
+**-user** : Bu, mesajınızı botunuzu başlatan kullanıcılara yayınlayacaktır.
+**-assistant** : Bu, mesajınızı botunuzun asistan hesabından yayınlayacaktır.
+**-nobot** : Bu, botunuzu mesaj yayınlamamaya zorlayacaktır
 
-● /block [ᴜsᴇʀɴᴀᴍᴇ ᴏʀ ʀᴇᴩʟʏ ᴛᴏ ᴀ ᴜsᴇʀ] ● ʙʟᴏᴄᴋ ᴛʜᴇ ᴜsᴇʀ ғʀᴏᴍ ᴏᴜʀ ʙᴏᴛ.
-● /unblock [ᴜsᴇʀɴᴀᴍᴇ ᴏʀ ʀᴇᴩʟʏ ᴛᴏ ᴀ ᴜsᴇʀ] ● ᴜɴʙʟᴏᴄᴋs ᴛʜᴇ ʙʟᴏᴄᴋᴇᴅ ᴜsᴇʀ.
-● /blockedusers ➥ sʜᴏᴡs ᴛʜᴇ ʟɪsᴛ ᴏғ ʙʟᴏᴄᴋᴇᴅ ᴜsᴇʀs.
+**Örnek:** `/broadcast -user -assistant -pin Rose Muzik`
 
-❖ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➥ ˹ Kʀɪsʜ ꭙ ᴍᴜsɪᴄ™ ♡゙
-"""
-
-HELP_6 = """
-<b>❖ ᴄʜᴀɴɴᴇʟ ᴩʟᴀʏ ᴄᴏᴍᴍᴀɴᴅs</b> ➥
-
-● /cplay ➥ sᴛᴀʀᴛs sᴛʀᴇᴀᴍɪɴɢ ᴛʜᴇ ʀᴇǫᴜᴇsᴛᴇᴅ ᴀᴜᴅɪᴏ ᴛʀᴀᴄᴋ ᴏɴ ᴄʜᴀɴɴᴇʟ's ᴠɪᴅᴇᴏᴄʜᴀᴛ.
-● /cvplay ➥ sᴛᴀʀᴛs sᴛʀᴇᴀᴍɪɴɢ ᴛʜᴇ ʀᴇǫᴜᴇsᴛᴇᴅ ᴠɪᴅᴇᴏ ᴛʀᴀᴄᴋ ᴏɴ ᴄʜᴀɴɴᴇʟ's ᴠɪᴅᴇᴏᴄʜᴀᴛ.
-● /cplayforce or /cvplayforce ➥ sᴛᴏᴩs ᴛʜᴇ ᴏɴɢᴏɪɴɢ sᴛʀᴇᴀᴍ ᴀɴᴅ sᴛᴀʀᴛs sᴛʀᴇᴀᴍɪɴɢ ᴛʜᴇ ʀᴇǫᴜᴇsᴛᴇᴅ ᴛʀᴀᴄᴋ.
-● /channelplay [ᴄʜᴀᴛ ᴜsᴇʀɴᴀᴍᴇ ᴏʀ ɪᴅ] ᴏʀ [ᴅɪsᴀʙʟᴇ] ➥ ᴄᴏɴɴᴇᴄᴛ ᴄʜᴀɴɴᴇʟ ᴛᴏ ᴀ ɢʀᴏᴜᴩ ᴀɴᴅ sᴛᴀʀᴛs sᴛʀᴇᴀᴍɪɴɢ ᴛʀᴀᴄᴋs ʙʏ ᴛʜᴇ ʜᴇʟᴩ ᴏғ ᴄᴏᴍᴍᴀɴᴅs sᴇɴᴛ ɪɴ ɢʀᴏᴜᴩ.
-
-❖ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➥ ˹ Kʀɪsʜ ꭙ ᴍᴜsɪᴄ™ ♡゙
-"""
-
-HELP_7 = """
-<b>❖ ɢʟᴏʙᴀʟ ʙᴀɴ ғᴇᴀᴛᴜʀᴇ</b> [ᴏɴʟʏ ғᴏʀ sᴜᴅᴏᴇʀs] ➥
-
-● /gban [ᴜsᴇʀɴᴀᴍᴇ ᴏʀ ʀᴇᴩʟʏ ᴛᴏ ᴀ ᴜsᴇʀ] ➥ ɢʟᴏʙᴀʟʟʏ ʙᴀɴs ᴛʜᴇ ᴄʜᴜᴛɪʏᴀ ғʀᴏᴍ ᴀʟʟ ᴛʜᴇ sᴇʀᴠᴇᴅ ᴄʜᴀᴛs ᴀɴᴅ ʙʟᴀᴄᴋʟɪsᴛ ʜɪᴍ ғʀᴏᴍ ᴜsɪɴɢ ᴛʜᴇ ʙᴏᴛ.
-● /ungban [ᴜsᴇʀɴᴀᴍᴇ ᴏʀ ʀᴇᴩʟʏ ᴛᴏ ᴀ ᴜsᴇʀ] ➥ ɢʟᴏʙᴀʟʟʏ ᴜɴʙᴀɴs ᴛʜᴇ ɢʟᴏʙᴀʟʟʏ ʙᴀɴɴᴇᴅ ᴜsᴇʀ.
-● /gbannedusers ➥ sʜᴏᴡs ᴛʜᴇ ʟɪsᴛ ᴏғ ɢʟᴏʙᴀʟʟʏ ʙᴀɴɴᴇᴅ ᴜsᴇʀs.
-
-❖ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➥ ˹ Kʀɪsʜ ꭙ ᴍᴜsɪᴄ™ ♡゙
-"""
-
-HELP_8 = """
-<b>❖ ʟᴏᴏᴘ sᴛʀᴇᴀᴍ</b> ➥
-
-● /loop [enable/disable] ➥ ᴇɴᴀʙʟᴇs/ᴅɪsᴀʙʟᴇs ʟᴏᴏᴘ ғᴏʀ ᴛʜᴇ ᴏɴɢᴏɪɴɢ sᴛʀᴇᴀᴍ
-● /loop [1, 2, 3, ...] ➥ ᴇɴᴀʙʟᴇs ᴛʜᴇ ʟᴏᴏᴘ ғᴏʀ ᴛʜᴇ ɢɪᴠᴇɴ ᴠᴀʟᴜᴇ.
-
-❖ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➥ ˹ Kʀɪsʜ ꭙ ᴍᴜsɪᴄ™ ♡゙
-"""
-
-HELP_9 = """
-<b>❖ ᴍᴀɪɴᴛᴇɴᴀɴᴄᴇ ᴍᴏᴅᴇ</b> [ᴏɴʟʏ ғᴏʀ sᴜᴅᴏᴇʀs] ➥
-
-● /logs ➥ ɢᴇᴛ ʟᴏɢs ᴏғ ᴛʜᴇ ʙᴏᴛ.
-● /logger [ᴇɴᴀʙʟᴇ/ᴅɪsᴀʙʟᴇ] ➥ ʙᴏᴛ ᴡɪʟʟ sᴛᴀʀᴛ ʟᴏɢɢɪɴɢ ᴛʜᴇ ᴀᴄᴛɪᴠɪᴛɪᴇs ʜᴀᴩᴩᴇɴ ᴏɴ ʙᴏᴛ.
-● /maintenance [ᴇɴᴀʙʟᴇ/ᴅɪsᴀʙʟᴇ] ➥ ᴇɴᴀʙʟᴇ ᴏʀ ᴅɪsᴀʙʟᴇ ᴛʜᴇ ᴍᴀɪɴᴛᴇɴᴀɴᴄᴇ ᴍᴏᴅᴇ ᴏғ ʏᴏᴜʀ ʙᴏᴛ.
-
-❖ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➥ ˹ Kʀɪsʜ ꭙ ᴍᴜsɪᴄ™ ♡゙
-"""
-
-HELP_10 = """
-<b>❖ ᴘɪɴɢ & sᴛᴀᴛs </b>➥
-
-● /start ➥ sᴛᴀʀᴛs ᴛʜᴇ ᴍᴜsɪᴄ ʙᴏᴛ.
-● /help ➥ ɢᴇᴛ ʜᴇʟᴩ ᴍᴇɴᴜ ᴡɪᴛʜ ᴇxᴩʟᴀɴᴀᴛɪᴏɴ ᴏғ ᴄᴏᴍᴍᴀɴᴅs.
-● /ping ➥ sʜᴏᴡs ᴛʜᴇ ᴩɪɴɢ ᴀɴᴅ sʏsᴛᴇᴍ sᴛᴀᴛs ᴏғ ᴛʜᴇ ʙᴏᴛ.
-● /stats ➥ sʜᴏᴡs ᴛʜᴇ ᴏᴠᴇʀᴀʟʟ sᴛᴀᴛs ᴏғ ᴛʜᴇ ʙᴏᴛ.
-
-❖ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➥ ˹ Kʀɪsʜ ꭙ ᴍᴜsɪᴄ™ ♡゙
-"""
-
-HELP_11 = """
-<b>❖ ᴩʟᴀʏ ᴄᴏᴍᴍᴀɴᴅs </b> ➥
-
-● <b>v ➥</b> sᴛᴀɴᴅs ғᴏʀ ᴠɪᴅᴇᴏ ᴩʟᴀʏ.
-● <b>force ➥</b> sᴛᴀɴᴅs ғᴏʀ ғᴏʀᴄᴇ ᴩʟᴀʏ.
-● /play ᴏʀ /vplay ➥ sᴛᴀʀᴛs sᴛʀᴇᴀᴍɪɴɢ ᴛʜᴇ ʀᴇǫᴜᴇsᴛᴇᴅ ᴛʀᴀᴄᴋ ᴏɴ ᴠɪᴅᴇᴏᴄʜᴀᴛ.
-● /playforce ᴏʀ /vplayforce ➥ sᴛᴏᴩs ᴛʜᴇ ᴏɴɢᴏɪɴɢ sᴛʀᴇᴀᴍ ᴀɴᴅ sᴛᴀʀᴛs sᴛʀᴇᴀᴍɪɴɢ ᴛʜᴇ ʀᴇǫᴜᴇsᴛᴇᴅ ᴛʀᴀᴄᴋ.
-
-❖ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➥ ˹ Kʀɪsʜ ꭙ ᴍᴜsɪᴄ™ ♡゙
-"""
-
-HELP_12 = """
-<b>❖ sʜᴜғғʟᴇ ᴏ̨ᴜᴇᴜᴇ </b>➥
-
-● /shuffle ➥ sʜᴜғғʟᴇ's ᴛʜᴇ ᴏ̨ᴜᴇᴜᴇ.
-● /queue ➥ sʜᴏᴡs ᴛʜᴇ sʜᴜғғʟᴇᴅ ᴏ̨ᴜᴇᴜᴇ.
-
-❖ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➥ ˹ Kʀɪsʜ ꭙ ᴍᴜsɪᴄ™ ♡゙
-"""
-
-HELP_13 = """
-<b>❖ sᴇᴇᴋ sᴛʀᴇᴀᴍ </b>➥
-
-● /seek [ᴅᴜʀᴀᴛɪᴏɴ ɪɴ sᴇᴄᴏɴᴅs] ➥ sᴇᴇᴋ ᴛʜᴇ sᴛʀᴇᴀᴍ ᴛᴏ ᴛʜᴇ ɢɪᴠᴇɴ ᴅᴜʀᴀᴛɪᴏɴ.
-● /seekback [ᴅᴜʀᴀᴛɪᴏɴ ɪɴ sᴇᴄᴏɴᴅs] ➥ ʙᴀᴄᴋᴡᴀʀᴅ sᴇᴇᴋ ᴛʜᴇ sᴛʀᴇᴀᴍ ᴛᴏ ᴛʜᴇ ᴛʜᴇ ɢɪᴠᴇɴ ᴅᴜʀᴀᴛɪᴏɴ.
-
-❖ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➥ ˹ Kʀɪsʜ ꭙ ᴍᴜsɪᴄ™ ♡゙
-"""
-
-HELP_14 = """
-<b>● sᴏɴɢ ᴅᴏᴡɴʟᴏᴀᴅ</b> ➥
-
-● /song [sᴏɴɢ ɴᴀᴍᴇ/ʏᴛ ᴜʀʟ] ➥ ᴅᴏᴡɴʟᴏᴀᴅ ᴀɴʏ ᴛʀᴀᴄᴋ ғʀᴏᴍ ʏᴏᴜᴛᴜʙᴇ ɪɴ ᴍᴘ3 ᴏʀ ᴍᴘ4 ғᴏʀᴍᴀᴛs.
-
-❖ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➥ ˹ Kʀɪsʜ ꭙ ᴍᴜsɪᴄ™ ♡゙
-"""
-
-HELP_15 = """
-<b>❖ sᴘᴇᴇᴅ ᴄᴏᴍᴍᴀɴᴅs</b> ➥
-
-● /speed or /playback ➥ ғᴏʀ ᴀᴅᴊᴜsᴛɪɴɢ ᴛʜᴇ ᴀᴜᴅɪᴏ ᴘʟᴀʏʙᴀᴄᴋ sᴘᴇᴇᴅ ɪɴ ɢʀᴏᴜᴘ.
-● /cspeed or /cplayback ➥ ғᴏʀ ᴀᴅᴊᴜsᴛɪɴɢ ᴛʜᴇ ᴀᴜᴅɪᴏ ᴘʟᴀʏʙᴀᴄᴋ sᴘᴇᴇᴅ ɪɴ ᴄʜᴀɴɴᴇʟ.
-
-❖ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➥ ˹ Kʀɪsʜ ꭙ ᴍᴜsɪᴄ™ ♡゙
 """
