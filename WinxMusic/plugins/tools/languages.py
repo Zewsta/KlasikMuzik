@@ -49,7 +49,7 @@ async def langs_command(client, message: Message, _):
 
 
 @app.on_callback_query(filters.regex("LG") & ~BANNED_USERS)
-@languageCB
+@language_cb
 async def lanuagecb(client, CallbackQuery, _):
     try:
         await CallbackQuery.answer()
