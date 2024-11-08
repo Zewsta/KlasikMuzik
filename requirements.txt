@@ -16,7 +16,7 @@ python-dotenv
 pyyaml
 requests
 speedtest-cli
-PyTgCrypto
+PyTgCrypto==1.2.7
 spotipy
 tgcrypto
 urllib3
