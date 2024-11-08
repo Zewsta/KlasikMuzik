@@ -4,7 +4,6 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from WinxMusic import app
 from WinxMusic.core.call import Winx
 from WinxMusic.misc import SUDOERS
-from WinxMusic.plugins import extra_plugins_enabled
 from WinxMusic.utils.database import (
     delete_filter,
     get_cmode,
