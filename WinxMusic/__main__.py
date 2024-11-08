@@ -42,7 +42,9 @@ async def init():
     await app.start()
     for all_module in ALL_MODULES:
         importlib.import_module("WinxMusic.plugins" + all_module)
-    LOGGER("WinxMusic.plugins").info("Necessary Modules Imported Successfully.")
+    LOGGER("WinxMusic.plugins").info(
+        "Successfully Imported Modules "
+    )
     await userbot.start()
     await Winx.start()
     try:
