@@ -4,7 +4,7 @@ from pyrogram.types import InlineKeyboardButton, Message
 
 from WinxMusic import app
 from WinxMusic.utils.database import get_lang, set_lang
-from WinxMusic.utils.decorators import actual_admin_cb, language, language_cb
+from WinxMusic.utils.decorators import actual_admin_cb, language, languageCB
 from config import BANNED_USERS
 from strings import get_command, get_string, languages_present
 
@@ -49,7 +49,7 @@ async def langs_command(client, message: Message, _):
 
 
 @app.on_callback_query(filters.regex("LG") & ~BANNED_USERS)
-@language_cb
+@languageCB
 async def lanuagecb(client, CallbackQuery, _):
     try:
         await CallbackQuery.answer()
