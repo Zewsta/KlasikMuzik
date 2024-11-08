@@ -55,7 +55,7 @@ async def init():
     except:
         pass
     await Winx.decorators()
-    LOGGER("WinxMusic").info("Alexa Music Bot Started Successfully")
+    LOGGER("WinxMusic").info("Winx Music Bot Started Successfully")
     await idle()
     await app.stop()
     await userbot.stop()
