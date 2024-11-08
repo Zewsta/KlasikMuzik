@@ -31,7 +31,7 @@ from WinxMusic.utils.database import (
     set_playtype,
 )
 from WinxMusic.utils.decorators.admins import actual_admin_cb
-from WinxMusic.utils.decorators.language import language, languageCB
+from WinxMusic.utils.decorators.language import language, language_cb
 from WinxMusic.utils.inline.settings import (
     audio_quality_markup,
     auth_users_markup,
