@@ -157,11 +157,7 @@ autoclean = []
 
 # Images
 
-START_IMG_URL = getenv(
-    "START_IMG_URL",
-    "https://raw.githubusercontent.com/gabrielmaialva33/winx-music-bot/refs/heads/master/assets/start_img_2.png",
-    # This is the file id of the photo you can also put the url of photo
-)
+START_IMG_URL = getenv("START_IMG_URL", None)
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
