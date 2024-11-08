@@ -6,7 +6,7 @@ from pyrogram import idle
 from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
-from WinxMusic import HELPABLE, LOGGER, app, userbot
+from WinxMusic import LOGGER, app, userbot
 from WinxMusic.core.call import Winx
 from WinxMusic.plugins import ALL_MODULES
 from WinxMusic.utils.database import get_banned_users, get_gbanned
