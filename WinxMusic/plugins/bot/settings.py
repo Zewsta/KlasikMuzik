@@ -31,7 +31,7 @@ from WinxMusic.utils.database import (
     set_playtype,
 )
 from WinxMusic.utils.decorators.admins import actual_admin_cb
-from WinxMusic.utils.decorators.language import language, language_cb
+from WinxMusic.utils.decorators.language import language, languageCB
 from WinxMusic.utils.inline.settings import (
     audio_quality_markup,
     auth_users_markup,
@@ -58,7 +58,7 @@ async def settings_mar(_client: Client, message: Message, _):
 
 
 @app.on_callback_query(filters.regex("settings_helper") & ~BANNED_USERS)
-@language_cb
+@languageCB
 async def settings_cb(_client: Client, callback_query: CallbackQuery, _):
     try:
         await callback_query.answer(_["set_cb_8"])
@@ -75,7 +75,7 @@ async def settings_cb(_client: Client, callback_query: CallbackQuery, _):
 
 
 @app.on_callback_query(filters.regex("settingsback_helper") & ~BANNED_USERS)
-@language_cb
+@languageCB
 async def settings_back_markup(_client: Client, callback_query: CallbackQuery, _):
     try:
         await callback_query.answer()
@@ -144,7 +144,7 @@ async def gen_buttons_vid(_, aud: str):
     )
     & ~BANNED_USERS
 )
-@language_cb
+@languageCB
 async def without_Admin_rights(_client: Client, callback_query: CallbackQuery, _):
     command = callback_query.matches[0].group(1)
     if command == "SEARCHANSWER":
@@ -492,24 +492,3 @@ async def authusers_mar(client: Client, callback_query: CallbackQuery, _):
         )
     except MessageNotModified:
         return
-
-
-"""✅<u>Configurações do Grupo:</u>
-/settings - Obtenha as configurações completas do grupo com botões inline.
-
-🔗 <u>Opções nas Configurações:</u>
-
-1. Você pode definir a Qualidade de Áudio.
-2. Você pode definir a Qualidade de Vídeo.
-3. **Usuários Autorizados**: Você pode alterar o modo dos comandos de admin para "todos" ou "somente admins".
-4. **Modo Limpo**: O bot apaga as mensagens após 5 minutos no grupo para manter o chat limpo e organizado.
-5. **Comando Limpo**: Quando ativado, o bot excluirá os comandos executados imediatamente.
-
-<b><u>Configurações de Reprodução:</u></b>
-/playmode - Obtenha o painel completo de configurações de reprodução com botões, onde você pode ajustar as configurações de reprodução do grupo.
-
-<b><u>Opções no Playmode:</u></b>
-1. **Modo de Busca** [Direto ou Inline] - Altera o modo de busca ao usar o comando /playmode.
-2. **Comandos de Admin** [Todos ou Admins] - Se "todos", qualquer pessoa do grupo poderá usar comandos de admin (como /skip, /stop, etc).
-3. **Tipo de Reprodução** [Todos ou Admins] - Se "admins", apenas os administradores do grupo poderão tocar músicas no chat de voz.
-"""
