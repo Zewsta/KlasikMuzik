@@ -26,7 +26,6 @@ async def stop_music(cli, message: Message):
         if message.from_user.id not in SUDOERS:
             return
     if not len(message.command) < 2:
-        if extra_plugins_enabled:
             if not message.command[0][0] == "c" and not message.command[0][0] == "e":
                 filter = " ".join(message.command[1:])
                 deleted = await delete_filter(message.chat.id, filter)
